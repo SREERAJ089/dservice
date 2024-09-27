@@ -1,0 +1,276 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+}
+
+::selection {
+    color: white; 
+    background: lightgreen; 
+}
+
+header{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.element{
+   width: 45vw;
+   background-color: #EDAE23;
+   height: 100vh;
+}
+
+
+ul.menu{
+    display: flex;
+    margin: 0px;
+    padding: 10px;
+    flex-direction: row;
+    list-style-type: none;
+    position: absolute;
+    left: 0%;
+    top: 0;
+
+}
+
+ul.menu li{
+    text-decoration: none;
+    margin: 20px;
+    text-wrap: nowrap;
+    cursor: pointer;
+}
+
+ul.menu li:nth-child(1){
+    margin-right: 20%;
+    color: green;
+    font-family: "Lilita One", sans-serif;
+}
+
+.items{
+    position: relative;
+    left: 5%;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: flex-start;
+    top: -65%;
+
+}
+.title{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 33vw;
+    height: 8vw;
+}
+
+.title1{
+    position: absolute;
+    left: 0;
+    animation: anim 15s ease-in-out 1 ;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    display: flex;
+    gap: 15vw;
+
+}
+
+@keyframes anim{
+    0%{
+        transform: translateX(0px);
+    }
+   
+    10%{
+        transform: translateX(-38vw);
+        
+    }
+
+    20%{
+        transform: translateX(-68vw);
+    }
+
+    30%{
+        transform: translateX(-102vw);
+    }
+
+    40%{
+        transform: translateX(-138vw);
+    }
+
+    50%{
+        transform: translateX(-171vw);
+    }
+
+    60%{
+        transform: translateX(-205vw);
+    }
+
+    70%{
+        transform: translateX(-238vw);
+    }
+
+    80%{
+        transform: translateX(-278vw);
+    }
+
+    90%{
+        transform: translateX(-323vw);
+    }
+
+    100%{
+        transform: translateX(-368vw);
+    }
+}
+
+h1{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6vw;
+    margin-top: 0;
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1vw;
+    position: absolute;
+    top: 33%;
+
+}
+
+button{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    border-radius: 1vw;
+    border: none;
+    outline: none;
+    background-color: green;
+    padding: 10px;
+    font-family: "Poppins", system-ui; 
+    font-size: bold;
+    color: white;
+    cursor: pointer;
+
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+
+    .element{
+        width: 100vw;
+
+        height: 45vh;
+    }
+
+    ul.menu li{
+
+        margin: 10px;
+        font-size: 3vw;
+    }
+    
+    ul.menu li:nth-child(1){
+        margin-right: 20%;
+    }
+
+    .items{
+        left: 4%;
+        width: 35vw;
+        top: -65%;
+    
+    }
+    .title{
+        width: 90vw;
+        height: 16vw;
+
+    }
+    
+    .title1{
+        gap: 45vw;
+    
+    }
+
+    h1{
+        font-size: 17vw;
+    }
+
+    @keyframes anim{
+        0%{
+            transform: translateX(0px);
+        }
+       
+        10%{
+            transform: translateX(-111vw);
+            
+        }
+    
+        20%{
+            transform: translateX(-198vw);
+        }
+    
+        30%{
+            transform: translateX(-297vw);
+        }
+    
+        40%{
+            transform: translateX(-402vw);
+        }
+    
+        50%{
+            transform: translateX(-496vw);
+        }
+    
+        60%{
+            transform: translateX(-595vw);
+        }
+    
+        70%{
+            transform: translateX(-693vw);
+        }
+    
+        80%{
+            transform: translateX(-807vw);
+        }
+    
+        90%{
+            transform: translateX(-935vw);
+        }
+    
+        100%{
+            transform: translateX(-1068.5vw);
+        }
+    }
+
+    p{
+        font-size: 2.5vw;
+        width: 90vw;
+    }
+
+    button{
+        top: 60%;
+        left: 4%;
+    }
+    
+}
+
+
+
